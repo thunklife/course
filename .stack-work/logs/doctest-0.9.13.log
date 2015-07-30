@@ -1,0 +1,26 @@
+Configuring doctest-0.9.13...
+Building doctest-0.9.13...
+Preprocessing library doctest-0.9.13...
+[ 1 of 14] Compiling Paths_doctest    ( .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/autogen/Paths_doctest.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Paths_doctest.o )
+[ 2 of 14] Compiling Sandbox          ( src/Sandbox.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Sandbox.o )
+[ 3 of 14] Compiling Interpreter      ( src/Interpreter.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Interpreter.o )
+[ 4 of 14] Compiling Help             ( src/Help.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Help.o )
+[ 5 of 14] Compiling Util             ( src/Util.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Util.o )
+[ 6 of 14] Compiling Location         ( src/Location.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Location.o )
+[ 7 of 14] Compiling GhcUtil          ( src/GhcUtil.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/GhcUtil.o )
+[ 8 of 14] Compiling Extract          ( src/Extract.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Extract.o )
+[ 9 of 14] Compiling Parse            ( src/Parse.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Parse.o )
+[10 of 14] Compiling Property         ( src/Property.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Property.o )
+[11 of 14] Compiling Runner.Example   ( src/Runner/Example.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Runner/Example.o )
+[12 of 14] Compiling Runner           ( src/Runner.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Runner.o )
+[13 of 14] Compiling Run              ( src/Run.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Run.o )
+[14 of 14] Compiling Test.DocTest     ( src/Test/DocTest.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Test/DocTest.o )
+In-place registering doctest-0.9.13...
+Preprocessing executable 'doctest' for doctest-0.9.13...
+[1 of 1] Compiling Main             ( driver/Main.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/doctest/doctest-tmp/Main.o )
+Linking .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/doctest/doctest ...
+Installing library in
+/Users/jessewilliamson/.stack/snapshots/x86_64-osx/lts-2.20/7.8.4/lib/x86_64-osx-ghc-7.8.4/doctest-0.9.13
+Installing executable(s) in
+/Users/jessewilliamson/.stack/snapshots/x86_64-osx/lts-2.20/7.8.4/bin
+Registering doctest-0.9.13...

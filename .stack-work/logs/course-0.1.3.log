@@ -1,0 +1,84 @@
+Preprocessing test suite 'doctests' for course-0.1.3...
+Testing src/Course/List.hs
+### Failure in src/Course/List.hs:152: expression `(1 :. 2 :. 3 :. Nil) ++ (4 :. 5 :. 6 :. Nil)'
+expected: [1,2,3,4,5,6]
+ but got: *** Exception: todo: Course.List#(++)
+### Failure in src/Course/List.hs:155: expression `headOr x (Nil ++ infinity) == 0'
+Exception: 'todo: Course.List#(++)' (after 1 test): 
+0
+### Failure in src/Course/List.hs:157: expression `headOr x (y ++ infinity) == headOr 0 y'
+Exception: 'todo: Course.List#(++)' (after 1 test): 
+0
+[]
+### Failure in src/Course/List.hs:159: expression `(x ++ y) ++ z == x ++ (y ++ z)'
+Exception: 'todo: Course.List#(++)' (after 1 test): 
+[]
+[]
+[]
+### Failure in src/Course/List.hs:161: expression `x ++ Nil == x'
+Exception: 'todo: Course.List#(++)' (after 1 test): 
+[]
+### Failure in src/Course/List.hs:173: expression `flatten ((1 :. 2 :. 3 :. Nil) :. (4 :. 5 :. 6 :. Nil) :. (7 :. 8 :. 9 :. Nil) :. Nil)'
+expected: [1,2,3,4,5,6,7,8,9]
+ but got: *** Exception: todo: Course.List#flatten
+### Failure in src/Course/List.hs:176: expression `headOr x (flatten (infinity :. y :. Nil)) == 0'
+Exception: 'todo: Course.List#flatten' (after 1 test): 
+0
+[]
+### Failure in src/Course/List.hs:178: expression `headOr x (flatten (y :. infinity :. Nil)) == headOr 0 y'
+Exception: 'todo: Course.List#flatten' (after 1 test): 
+0
+[]
+### Failure in src/Course/List.hs:180: expression `sum (map length x) == length (flatten x)'
+Exception: 'todo: Course.List#flatten' (after 1 test): 
+[]
+### Failure in src/Course/List.hs:189: expression `flatMap (\x -> x :. x + 1 :. x + 2 :. Nil) (1 :. 2 :. 3 :. Nil)'
+expected: [1,2,3,2,3,4,3,4,5]
+ but got: *** Exception: todo: Course.List#flatMap
+### Failure in src/Course/List.hs:192: expression `headOr x (flatMap id (infinity :. y :. Nil)) == 0'
+Exception: 'todo: Course.List#flatMap' (after 1 test): 
+0
+[]
+### Failure in src/Course/List.hs:194: expression `headOr x (flatMap id (y :. infinity :. Nil)) == headOr 0 y'
+Exception: 'todo: Course.List#flatMap' (after 1 test): 
+0
+[]
+### Failure in src/Course/List.hs:196: expression `flatMap id (x :: List (List Int)) == flatten x'
+Exception: 'todo: Course.List#flatMap' (after 1 test): 
+[]
+### Failure in src/Course/List.hs:207: expression `let types = x :: List (List Int) in flatten x == flattenAgain x'
+Exception: 'todo: Course.List#flatten' (after 1 test): 
+[]
+### Failure in src/Course/List.hs:225: expression `seqOptional (Full 1 :. Full 10 :. Nil)'
+expected: Full [1,10]
+ but got: *** Exception: todo: Course.List#seqOptional
+### Failure in src/Course/List.hs:244: expression `find even (1 :. 3 :. 5 :. Nil)'
+expected: Empty
+ but got: *** Exception: todo: Course.List#find
+### Failure in src/Course/List.hs:267: expression `lengthGT4 (1 :. 3 :. 5 :. Nil)'
+expected: False
+ but got: *** Exception: todo: Course.List#lengthGT4
+### Failure in src/Course/List.hs:286: expression `reverse Nil'
+expected: []
+ but got: *** Exception: todo: Course.List#reverse
+### Failure in src/Course/List.hs:292: expression `let types = x :: List Int in reverse x ++ reverse y == reverse (y ++ x)'
+Exception: 'todo: Course.List#(++)' (after 1 test): 
+[]
+[]
+### Failure in src/Course/List.hs:294: expression `let types = x :: Int in reverse (x :. Nil) == x :. Nil'
+Exception: 'todo: Course.List#reverse' (after 1 test): 
+0
+### Failure in src/Course/List.hs:304: expression `let (x:.y:.z:.w:._) = produce (+1) 0 in [x,y,z,w]'
+expected: [0,1,2,3]
+ but got: [*** Exception: todo: Course.List#produce
+### Failure in src/Course/List.hs:319: expression `notReverse Nil'
+expected: []
+ but got: *** Exception: todo: Is it even possible?
+### Failure in src/Course/List.hs:322: expression `let types = x :: List Int in notReverse x ++ notReverse y == notReverse (y ++ x)'
+Exception: 'todo: Course.List#(++)' (after 1 test): 
+[]
+[]
+### Failure in src/Course/List.hs:324: expression `let types = x :: Int in notReverse (x :. Nil) == x :. Nil'
+Exception: 'todo: Is it even possible?' (after 1 test): 
+0
+Examples: 58  Tried: 46  Errors: 0  Failures: 24

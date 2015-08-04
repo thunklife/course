@@ -35,24 +35,3 @@
   (major1) == 0 && (major2) <  9 || \
   (major1) == 0 && (major2) == 9 && (minor) <= 13)
 
-/* package directory-1.2.1.0 */
-#define VERSION_directory "1.2.1.0"
-#define MIN_VERSION_directory(major1,major2,minor) (\
-  (major1) <  1 || \
-  (major1) == 1 && (major2) <  2 || \
-  (major1) == 1 && (major2) == 2 && (minor) <= 1)
-
-/* package filepath-1.3.0.2 */
-#define VERSION_filepath "1.3.0.2"
-#define MIN_VERSION_filepath(major1,major2,minor) (\
-  (major1) <  1 || \
-  (major1) == 1 && (major2) <  3 || \
-  (major1) == 1 && (major2) == 3 && (minor) <= 0)
-
-/* package template-haskell-2.9.0.0 */
-#define VERSION_template_haskell "2.9.0.0"
-#define MIN_VERSION_template_haskell(major1,major2,minor) (\
-  (major1) <  2 || \
-  (major1) == 2 && (major2) <  9 || \
-  (major1) == 2 && (major2) == 9 && (minor) <= 0)
-

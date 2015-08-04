@@ -1,17 +1,26 @@
 Configuring course-0.1.3...
-Preprocessing test suite 'doctests' for course-0.1.3...
-[1 of 2] Compiling Build_doctests   ( .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/autogen/Build_doctests.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/doctests/doctests-tmp/Build_doctests.o )
-[2 of 2] Compiling Main             ( test/doctests.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/doctests/doctests-tmp/Main.o )
-Linking .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/doctests/doctests ...
-Testing src/Course/List.hs
-### Failure in src/Course/List.hs:321: expression `notReverse Nil'
-expected: []
- but got: *** Exception: todo: Is it even possible?
-### Failure in src/Course/List.hs:324: expression `let types = x :: List Int in notReverse x ++ notReverse y == notReverse (y ++ x)'
-Exception: 'todo: Is it even possible?' (after 1 test): 
-[]
-[]
-### Failure in src/Course/List.hs:326: expression `let types = x :: Int in notReverse (x :. Nil) == x :. Nil'
-Exception: 'todo: Is it even possible?' (after 1 test): 
-0
-Examples: 58  Tried: 58  Errors: 0  Failures: 3
+Building course-0.1.3...
+Preprocessing library course-0.1.3...
+[ 5 of 28] Compiling Course.List      ( src/Course/List.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/List.o )
+[ 6 of 28] Compiling Course.Functor   ( src/Course/Functor.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/Functor.o )
+[ 7 of 28] Compiling Course.Extend    ( src/Course/Extend.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/Extend.o ) [Course.Functor changed]
+[11 of 28] Compiling Course.Comonad   ( src/Course/Comonad.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/Comonad.o ) [Course.Extend changed]
+[12 of 28] Compiling Course.Apply     ( src/Course/Apply.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/Apply.o )
+[13 of 28] Compiling Course.Bind      ( src/Course/Bind.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/Bind.o ) [Course.Apply changed]
+[14 of 28] Compiling Course.Cheque    ( src/Course/Cheque.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/Cheque.o ) [Course.Apply changed]
+[15 of 28] Compiling Course.Applicative ( src/Course/Applicative.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/Applicative.o ) [Course.Apply changed]
+[16 of 28] Compiling Course.Compose   ( src/Course/Compose.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/Compose.o ) [Course.Applicative changed]
+[18 of 28] Compiling Course.Monad     ( src/Course/Monad.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/Monad.o ) [Course.Applicative changed]
+[19 of 28] Compiling Course.Parser    ( src/Course/Parser.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/Parser.o ) [Course.Applicative changed]
+[20 of 28] Compiling Course.State     ( src/Course/State.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/State.o ) [Course.Applicative changed]
+[21 of 28] Compiling Course.StateT    ( src/Course/StateT.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/StateT.o ) [Course.Applicative changed]
+[22 of 28] Compiling Course.Traversable ( src/Course/Traversable.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/Traversable.o ) [Course.Applicative changed]
+[23 of 28] Compiling Course.Interactive ( src/Course/Interactive.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/Interactive.o ) [Course.Applicative changed]
+[24 of 28] Compiling Course.ListZipper ( src/Course/ListZipper.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/ListZipper.o ) [Course.Applicative changed]
+[25 of 28] Compiling Course.MoreParser ( src/Course/MoreParser.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/MoreParser.o ) [Course.Parser changed]
+[26 of 28] Compiling Course.JsonParser ( src/Course/JsonParser.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course/JsonParser.o ) [Course.Functor changed]
+[28 of 28] Compiling Course           ( src/Course.hs, .stack-work/dist/x86_64-osx/Cabal-1.18.1.5/build/Course.o ) [Course.Applicative changed]
+In-place registering course-0.1.3...
+Installing library in
+/Users/jessewilliamson/Projects/nicta-course/course/.stack-work/install/x86_64-osx/lts-2.20/7.8.4/lib/x86_64-osx-ghc-7.8.4/course-0.1.3
+Registering course-0.1.3...
